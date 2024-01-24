@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body {
+    background-image: linear-gradient(
+        to right,
+        #C5E898,
+        #29ADB2
+    );
+}
+#header {
+    background-color: #4CB9E7;
+}
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+svg {
+    width: 20px;
+    height: 20px;
+    color: whitesmoke;
+}
+.arrow-submenu {
+    position: absolute;
+    top: 7px;
+}
+#menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-bar {
+    display: flex;
+}
+.icon {
+    display: flex;
+    align-items: center;
+}
+#logo {
+    max-width: 90px;
+    height: auto;
+}
+#logo img {
+    width: 100%;
+}
+.nav-bar ul#main-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ul#main-menu {
+    position: relative;
+
+}
+.nav-bar ul#main-menu li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: whitesmoke;
+    padding: 32px 10px;
+    margin-left: 15px;
+}
+ul#main-menu ul.sub-menu {
+    position: absolute;
+    list-style: none;
+    padding: 10px 0;
+    width: 200px;
+    background-color: #9BB8CD;
+    border: 1px solid #96EFFF;
+    top: 60px;
+    display: none;
+} 
+ul#main-menu ul.sub-menu>li {
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid whitesmoke;
+}
+ul#main-menu ul.sub-menu>li:last-child {
+    border-bottom: none;
+}
+.nav-bar ul#main-menu li:hover>ul.sub-menu {
+    display: block;
+}
+ul#main-menu ul.sub-menu ul.sub-menu {
+    position: absolute;
+    left: 198px;
+    top: 42px;
+}
+.icon-search {
+    margin-right: 13px;
+    margin-left: 13px;
+}
+.over_play {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0, 0.3);
+    display: none;
+}
+.btn-close {
+    position: absolute;
+    right: 1rem ;
+    top: 1rem;
+    z-index: 1;
+    cursor: pointer;
+}
+.sign-up {
+    position: absolute;
+    width: 450px ;
+    left: 37%;
+    top: 50%;
+    /* right: 0; */    
+    transform: translateY(-250%);
+    background-color: #4CB9E7;
+    border: 1px solid white;
+    border-radius: 6px;
+    padding: 20px 8px;
+}
+.sign-up h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 15px;
+    color: white;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom:  10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.form-group input {
+    max-width: 100%;
+    padding: 15px;
+    border: 1px solid whitesmoke;
+    border-radius: 8px;  
+}
+.form-group label {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+.form-text {
+    margin: 24px 0;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: white;
+}
+.form-text a {
+    text-decoration: none;
+    color: #0766AD;
+}
+button {
+    padding: 10px;
+    background-color: #0766AD;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+.btn-close_form {
+    position: absolute;
+    left: 45%;
+    top: -20%;
+}
+.btn-close_form svg {
+    width: 20%;
+    height: 20%;
+}
