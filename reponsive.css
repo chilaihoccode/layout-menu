@@ -46,6 +46,14 @@
         transform: translate(0,-50%);
         z-index: 1;
     }
+    .nav-input-search:checked ~ .over_play {
+        display: block;
+    }
+    .nav-input-search:checked ~ .input-search{
+        transform: translate(0,35%);
+        /* display: block; */
+        z-index: 1;
+    }
 }
 @media screen and (max-width : 1023px) {
     .container {
@@ -84,6 +92,14 @@
     .nav-input-form:checked ~ .sign-up {
         transform: translate(0,-50%);
         left: 25%;
+        z-index: 1;
+    }
+    .nav-input-search:checked ~ .over_play {
+        display: block;
+    }
+    .nav-input-search:checked ~ .input-search{
+        transform: translate(0,35%);
+        left: 19em;
         z-index: 1;
     }
 }

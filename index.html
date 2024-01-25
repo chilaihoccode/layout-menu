@@ -60,17 +60,46 @@
                         </ul>
                     </nav>
                     <div class="icon">
-                      
-                        <div class="icon-search">
-                            <a href="#">
+                        <!-- search reponsivie -->
+                        <!-- <label for="nav-input-search" class="over_play"></label> -->
+                        <input type="checkbox" hidden class="nav-input-search" id="nav__bar-checked-search">
+                        
+                        <label for="nav__bar-checked-search" class="icon-search">
+                            <label for="nav__bar-checked-search" href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                                     <path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.28l4.69 4.69a.75.75 0 1 1-1.06 1.06l-4.69-4.69A8.25 8.25 0 0 1 2.25 10.5Z" clip-rule="evenodd" />
-                                  </svg>                                                                    
-                            </a>
-                        </div> 
+                                  </svg>                                                                  
+                            </label>
+                        </label> 
 
                        
-                        <label for="nav__bar-checked-form" class="over_play"></label>
+                        <label for="nav__bar-checked-search" class="input-search">
+                            <label for="nav__bar-checked-search" class="btn-close_search">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                    <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                                  </svg>                              
+                            </label>
+                            
+                            <div class="search">
+                                <input type="text" id="search-zoom"
+                                placeholder="What are you looking for?">
+                                <div class="icon-search-input">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                            <path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.28l4.69 4.69a.75.75 0 1 1-1.06 1.06l-4.69-4.69A8.25 8.25 0 0 1 2.25 10.5Z" clip-rule="evenodd" />
+                                          </svg>                                                                  
+                                    </a>
+                                </div> 
+                                
+                            </div>
+                            <div id="result-search">
+                               
+                            </div>
+                            
+                        </label>
+
+                       <!-- form reponsive -->
+                        <label for="nav__bar-checked-form" class="over_play" ></label>
                         <input type="checkbox" hidden class="nav-input-form" id="nav__bar-checked-form">
                         <label for="nav__bar-checked-form" class="icon-user">
                             <label for="nav__bar-checked-form" href="#">
@@ -87,14 +116,16 @@
                                   </svg>                              
                                 </label>
                             <h1 class="text">Log in</h1>
-                            <form action="">
+                            <form action="" method="post" id="Login">
                                 <div class="form-group">
                                     <label for="email">Email</label>
-                                    <input type="email" id="email" class="" placeholder="Write your email">
+                                    <input type="text" id="email" name="email" placeholder="Write your email" autocomplete="off">
+                                    <div class="error_message"></div>
                                 </div>
                                 <div class="form-group">
                                     <label for="password">Password</label>
-                                    <input type="password" id="password" class="" placeholder="Enter your password">
+                                    <input type="password" id="password" name="password" placeholder="Enter your password" autocomplete="off">
+                                    <div class="error_message"></div>
                                 </div>
                                 <div class="form-text">
                                     You do not have account?<span><a href="#">Sign Up</a></span>
@@ -103,6 +134,7 @@
                                     <button type="submit">Log In</button>
                             </form>                           
                         </label>
+                        
                         <!-- reponsive mobile -->
                         <label for="nav__bar-checked" class="nav-btn">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
@@ -172,7 +204,8 @@
     </div>
 
     
-    
+    <script src="search.js"></script>
+    <script src="signup.js"></script>
       
 </body>
 </html>
